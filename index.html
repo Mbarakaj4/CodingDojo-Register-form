@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
     <form>
-        <label for="fname" id="fname-lb">First Name:*</label>
-        <label for="lname" id="lname-lb">Last Name:*</label>
-        <label for="email" id="email-lb">Email:*</label>
-        <label for="password" id="password-lb">Password:*</label>
-        <label for="cpassword" id="cpassword-lb">Confirm Password:*</label>
-        <label for="bod" id="bod-lb">Birthday:</label>
-        <label for="gender-id" id="gender-id-lb">Gender Identity:</label>
-        <label for="short-description" id="short-description-lb">A short description about myself:</label>
-        <label for="flanguage" id="flanguage-lb">Favorite Language:</label>
+      <label for="fname" id="fname-lb">First Name:*</label>
+      <input type="text" name="fname" id="fname-txt" />
+      <label for="lname" id="lname-lb">Last Name:*</label>
+      <input type="text" name="lname" id="lname-txt" />
+      <label for="email" id="email-lb">Email:*</label>
+      <input type="text" name="email" id="email-txt" />
+      <label for="password" id="password-lb">Password:*</label>
+      <input type="password" name="password" id="passwd" />
+      <label for="cpassword" id="cpassword-lb">Confirm Password:*</label>
+      <input type="password" name="cpassword" id="cpasswd" />
+      <label for="bod" id="bod-lb">Birthday:</label>
+      <input type="date" name="bod" id="bod-date" />
+      <label for="gender-id" id="gender-id-lb">Gender Identity:</label>
+      <input type="radio" name="male" id="gender-m" value="Male" />
+      <label for="gender-m">Male</label>
+      <input type="radio" name="female" id="gender-f" value="Male" />
+      <label for="gender-f">Female</label>
+      <input type="radio" name="non-binary" id="gender-nb" value="Male" />
+      <label for="gender-bn">Non-Binary</label>
+      <input type="radio" name="none" id="gender-na" value="Male" />
+      <label for="gener-na">I prefer not to answer</label>
+      <label for="short-description" id="short-description-lb"
+        >A short description about myself:</label
+      >
+      <textarea name="description" id="description-txt" cols="30" rows="10"></textarea>
+      <label for="flanguage" id="flanguage-lb">Favorite Language:</label>
+      <select name="languages" id="flanguage-select">
+        <option value="Javascript">Javascript</option>
+        <option value="Css">Css</option>
+        <option value="HTML">HTML</option>
+      </select>
+      <input type="checkbox" name="accept" id="accept-chkbx">
+      <label for="accept-chkbx" id="accept-chkbx-lb"
+        >Yes, I would like to recieve periodic email updates</label
+      >
+      <label for="footnote" id="footnote-lb"
+        >* indicates a required field</label
+      >
     </form>
-</body>
+  </body>
 </html>
